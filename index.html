@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>ChatBot Demo</title>
+</head>
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+
+<div class="flex flex-col w-full max-w-lg h-[80vh] bg-white rounded-lg shadow-xl overflow-hidden">
+    <div class="bg-blue-600 text-white p-4 text-center">
+        <h1 class="text-xl font-semibold">Prawie ChatBot</h1>
+    </div>
+
+    <div class="flex-grow overflow-y-auto messages output px-4 py-2" id="chatMessage">
+        <p id="bLoader" class="text-center text-gray-500 p-4">Ładowanie...</p>
+    </div>
+
+    <div class="p-4 bg-gray-100 border-t border-gray-200 flex items-center">
+        <input
+            class="flex-grow px-4 py-2 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent mr-2"
+            type="text"
+            placeholder="Wpisz wiadomość lub komendę...">
+        <button id="send" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-5 rounded-full transition duration-150 ease-in-out">
+            Wyślij
+        </button>
+    </div>
+
+    <div class="px-4 pb-2 pt-1 bg-gray-100 text-center">
+        <p class="text-xs text-gray-500">
+            Wypróbuj komendy: <code class="bg-gray-200 px-1 rounded">/help</code>, <code class="bg-gray-200 px-1 rounded">/version</code>, <code class="bg-gray-200 px-1 rounded">/pogoda</code> lub zapytaj o coś!
+        </p>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+
+<script src="script.js"></script>
+</body>
+</html>
